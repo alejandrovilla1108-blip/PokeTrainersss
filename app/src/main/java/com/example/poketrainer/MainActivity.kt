@@ -19,9 +19,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PokeTrainerTheme {
-                // Hola .
-                // Prueba 2 .
-                // Prueba 3
+                Scaffold { padding ->
+                    Text(
+                        text = "Hello World!",
+                        modifier = Modifier.padding(padding)
+                    )
+                }
             }
         }
     }
